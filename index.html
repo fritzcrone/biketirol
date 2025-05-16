@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bike Trail Tirol Beispiel</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Leaflet providers -->
+    <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
+
+    <!-- eigene Stile und Hauptskript -->
+    <link rel="stylesheet" href="main.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2><i class="fa-solid fa-person-biking"></i> Bike Trail Tirol Beispiel</h2>
+            <nav>
+                <i class="fab fa-github"></i> <a href="https://github.com/webmapping/biketirol">Github</a>
+            </nav>
+        </header>
+        <article>
+            <h1><mark>Ehrwald - Scharnitz</mark></h1>
+            <p><mark>Rund 1.000 Höhenmeter gilt es auf dieser 40 Kilometer langen Etappe zu überwinden – außer, Sie legen einen Teil der Strecke (400 Höhenmeter) mit der Ehrwalder Almbahn zurück. Belohnt wird diese als mittelschwer eingestufte Etappe mit einer atemberaubenden Kulisse: Die Zugspitze präsentiert sich als stete Begleiterin, ehe Sie am Tor zum Naturpark Karwendel stehen.</mark></p>
+
+            <div class="summary">
+                <div class="summary-badge" title="Fahrzeit">
+                    <i class="fa-regular fa-clock"></i> <mark>4:00</mark>
+                </div>
+                <div class="summary-badge" title="Länge">
+                    <i class="fa-solid fa-ruler-horizontal"></i> <mark>40,0</mark> km
+                </div>
+                <div class="summary-badge" title="Höhenmeter bergauf">
+                    <i class="fa-solid fa-up-long"></i> <mark>990</mark> m
+                </div>
+                <div class="summary-badge" title="Höhenmeter bergab">
+                    <i class="fa-solid fa-down-long"></i> <mark>1020</mark> m
+                </div>
+                <div class="summary-badge" title="höchster Punkt">
+                    <i class="fa-solid fa-arrows-up-to-line"></i> <mark>1590</mark> m
+                </div>
+                <div class="summary-badge" title="tiefster Punkt">
+                    <i class="fa-solid fa-arrows-down-to-line"></i> <mark>900</mark> m
+                </div>
+                <div class="summary-badge" title="Schwierigkeitsgrad">
+                    <i class="fa-solid fa-heart-pulse"></i> <mark>Mittelschwer</mark>
+                </div>
+                <div class="summary-badge" title="Download">
+                    <i class="fa-solid fa-download"></i> <mark>https://www.wildganz.com/radfernweg-aut/bike-trail-tirol-etappe-6</mark>
+                </div>
+            </div>
+
+            <div id="map"></div>
+
+            <h3>Streckenbeschreibung</h3>
+            <p><mark>Zunächst radelt man leicht ansteigend bis zur Talstation der Ehrwalder Almbahn. Von hier geht es immer aufwärts auf der Route Nr. 813 bis zur Ehrwalder Alm (1,5h ab Ehrwald). Alternativ kann man die Gondelbahn benutzen. Von der Ehrwalder Alm geht es weiter am Hauptweg aufwärts, in zwei Kehren zum höchsten Punkt auf 1.600m Seehöhe. Kurz danach an der markanten Abzweigung zur Seeben Alm hält man sich links Richtung Leutasch (551). Bei einem Abstecher zur Tillfussalm oder Gaistalalm wird man mit einem eindrucksvollen Blick auf die steil abfallenden Nordwände der Mieminger Kette belohnt. Weiter geht es auf dem Hauptweg durch das Gaistal, vorbei an der Mautstelle, bis in den Leutascher Ortsteil Klamm. Hier radelt man über die Brücke nach Obern und orientiert sich am „Hotel Bergland“. Nun geht es über die nächste Straße Richtung Leutasch Oberweidach (2h ab der Ehrwalder Alm). Der Weg führt bald in den Wald und wieder überquert man eine Straße, danach fährt man links in einen Waldweg. Ab hier folgt man immer den Schildern „539 Mooserweg Seepromenade“ bzw. „Leutasch Weidach“. Nach Passieren des Weidachsees erreicht man die Hauptstraße. Dieser folgt man etwa 350 Meter und zweigt dann gleich wieder rechts ab „541 Katzenkopf- Fluder“. Nun folgt ein Anstieg im Wald über 200 Höhenmeter und eine Abfahrt durchs Fludertal bis zur Straße. Dieser folgt man kurz in nördlicher Richtung bis man auf die Straße nach Scharnitz abzweigt. Kurz bevor man die Bundesstraße erreicht, zweigt man links in die Wiesen bei Giessenbach ab und radelt die letzten Kilometer zum Etappenziel nach Scharnitz (1,5h ab Leutasch Weidach).</mark></p>
+
+        </article>
+        <footer>
+            <strong>Datenquellen:</strong>
+            <nav>
+                <a href="">todo:Link auf die Webseite der Etappe mit dem selben Linktext wie bei der Überschrift (todo:Titel)</mark> |
+                <a href="https://www.data.gv.at/katalog/de/dataset/land-tirol_biketrailtirol">Opendata Bike Trail Tirol</a> |
+                <a href="https://www.data.gv.at/katalog/de/dataset/land-tirol_elektronischekartetirol">eGrundkarte Tirol</a>
+            </nav>
+        </footer>
+    </main>
+</body>
+
+</html>
