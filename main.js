@@ -70,13 +70,6 @@ for (let etappe of ETAPPEN) {
 
 // auf Wechsel in Pulldown reagieren
 pulldown.onchange = function(evt) {
-    console.log(evt.target.value);
+    //console.log(evt.target.value);
     window.location.href = `https://${evt.target.value}.github.io/biketirol`;
 }
-
-/*document.querySelector("#pulldown select").onchange = function (evt) {
-    let url = `https://${evt.target.value}.github.io/biketirol`;
-    //console.log(url);
-    //console.log(evt.target.value);
-    window.location = url;
-}*/
