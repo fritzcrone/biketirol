@@ -1,5 +1,4 @@
 const ETAPPEN = [
-    [
  {
    "user": "fritzcrone",
    "nr": 6,
@@ -378,5 +377,4 @@ const ETAPPEN = [
    "streckenverlauf": "Zunächst hält man sich am Radwegweiser „5 Gurgltal“. Die Strecke verläuft den ersten Kilometer entlang des Gurglbachs und in Folge fährt man auf der gleichen Straße Richtung „Imst Zentrum“ weiter. Erst am nördlichen Stadtrand gelangt man wieder auf den Radwanderweg Nr. 5. Alternativ dazu kann die Stadt am Talboden auf dem Radweg umfahren werden. Auf den nächsten knapp 10 Kilometern bleibt man immer auf dem Radweg, der am Rande des Talbodens meist im Wald verläuft (5). Erst bei Erreichen der Straßenkehre zweigt man links Richtung Nassereith ab. Kurz vor der Ortschaft unterquert man die Bundesstraße auf dem Radwanderweg Nr. 4. Rechts vorbei am Hubschrauberlandeplatz fährt man in den Ortsteil Dormitz (1,5 Stunden ab dem Start) und weiter auf einer asphaltierten Straße ins Roßbachtal. Auf ca. 980m Seehöhe zweigt man scharf links ab „605 Marienbergjoch“ und gelangt nach einem Anstieg in den Weiler Aschland. Einen knappen Kilometer nach dem kleinen Dorf sollte man die Abzweigung links auf das Marienbergjoch nicht verpassen. Nun geht es durch einen Wald teilweise steil aufwärts vorbei an der Marienberg Alm auf das Marienbergjoch (3 Stunden ab Dormitz). Es folgt eine zunächst recht steile Abfahrt durch das Schigebiet bis kurz vor die Straße nach Biberwier, wo man auf den „Lärchenweg“ wechselt. Auf dem Panoramaweg radelt man nun leicht bergauf und -ab nach Ehrwald (1,5 Stunden ab Marienbergjoch).",
    "weblink": "https://www.wildganz.com/radfernweg-aut/bike-trail-tirol-etappe-32"
  }
-]
 ]
