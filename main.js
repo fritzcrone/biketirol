@@ -90,4 +90,5 @@ var miniMap = new L.Control.MiniMap(sommerkarte, {
     minimized: false,
 }).addTo(map);
 
-
+// Fullscreen Plugin
+map.addControl(new L.Control.Fullscreen());
