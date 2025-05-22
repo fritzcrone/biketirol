@@ -82,3 +82,12 @@ var controlElevation = L.control.elevation({
     height: 300,
 }).addTo(map);
 controlElevation.load("data/etappe6.gpx");
+
+// Minimap
+var sommerkarte = new L.TileLayer("https://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}.png");
+var miniMap = new L.Control.MiniMap(sommerkarte, {
+    toggleDisplay: true,
+    minimized: false,
+}).addTo(map);
+
+
