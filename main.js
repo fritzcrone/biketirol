@@ -61,7 +61,7 @@ for (let etappe of ETAPPEN) {
     //console.log(etappe.titel);
     let selected = "";
     if (etappe.nr == 6) {
-    selected = "selected";
+        selected = "selected";
     }
     pulldown.innerHTML += `
         <option ${selected} value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.titel}</option>
@@ -69,11 +69,16 @@ for (let etappe of ETAPPEN) {
 }
 
 // auf Wechsel in Pulldown reagieren
-pulldown.onchange = function(evt) {
+pulldown.onchange = function (evt) {
     //console.log(evt.target.value);
     window.location.href = `https://${evt.target.value}.github.io/biketirol`;
 }
 
-  // Instantiate elevation control.
-  var controlElevation = L.control.elevation({}).addTo(map);
-  controlElevation.load("data/etappe6.gpx");
+// Instantiate elevation control.
+var controlElevation = L.control.elevation({
+    theme: "bike-tirol",
+    time: false,
+    elevationDiv: "#profile",
+    height: 300,
+}).addTo(map);
+controlElevation.load("data/etappe6.gpx");
